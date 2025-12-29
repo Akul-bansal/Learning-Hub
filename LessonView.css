@@ -1,0 +1,182 @@
+.lesson-view {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-button {
+  background: transparent;
+  border: 2px solid #e2e8f0;
+  color: #4a5568;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.back-button:hover {
+  background: #f7fafc;
+  border-color: #cbd5e0;
+}
+
+.lesson-content {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.lesson-header {
+  margin-bottom: 2rem;
+}
+
+.lesson-category {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.lesson-main-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  color: #1a202c;
+  line-height: 1.2;
+}
+
+.lesson-introduction {
+  background: #f7fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+  margin-bottom: 2.5rem;
+}
+
+.lesson-introduction p {
+  margin: 0;
+  font-size: 1.125rem;
+  color: #2d3748;
+  line-height: 1.7;
+}
+
+.lesson-sections {
+  margin-bottom: 2.5rem;
+}
+
+.lesson-section {
+  margin-bottom: 2.5rem;
+}
+
+.lesson-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: #2d3748;
+}
+
+.section-text {
+  font-size: 1.125rem;
+  color: #4a5568;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.key-takeaways {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.takeaways-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: #92400e;
+}
+
+.takeaways-list {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.takeaway-item {
+  font-size: 1.125rem;
+  color: #78350f;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+  position: relative;
+}
+
+.takeaway-item::before {
+  content: "✓";
+  position: absolute;
+  left: -1.5rem;
+  color: #92400e;
+  font-weight: 700;
+}
+
+.lesson-actions {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.quiz-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quiz-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+  .lesson-view {
+    padding: 1rem;
+  }
+
+  .lesson-content {
+    padding: 1.5rem;
+  }
+
+  .lesson-main-title {
+    font-size: 2rem;
+  }
+
+  .lesson-introduction p {
+    font-size: 1rem;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+
+  .takeaway-item {
+    font-size: 1rem;
+  }
+}
